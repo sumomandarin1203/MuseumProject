@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ログイン</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<header>
+		<h1>北海道の博物館サイト（仮）</h1>
+	</header>
+	<main>
+		<form action="/login" method="post">
+			<input type="text" name="email" placeholder="メールアドレス" id =""><br>
+			<input type="text" name="password" placeholder="パスワード" id =""><br>
+			<button id = "">ログイン</button>
+			<br><span th:text="${message}" style="color: red"></span>
+		</form>
+		<br>
+		<a href="/users/new">新規アカウント作成</a>
+	</main>
+	<hr>
+	<footer th:replace="footer"></footer>
+
+</body>
+</html>
