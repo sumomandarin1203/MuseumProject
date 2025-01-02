@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import java.util.List;
+
 import jakarta.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,10 +11,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.example.demo.entity.AccountInfo;
 import com.example.demo.model.Account;
+import com.example.demo.repository.AccountInfoRepository;
 
 @Controller
 public class AccountController {
+	@Autowired
+	AccountInfoRepository accountInfoRepository;
 	@Autowired
 	HttpSession session;
 	@Autowired
@@ -43,7 +49,22 @@ public class AccountController {
 			@RequestParam("email") String email,
 			@RequestParam("password") String password,
 			Model model) {
-		account.setName(account.getName());
+
+		if (password == null || password.length() == 0
+				|| email == null || email.length() == 0) {
+			model.addAttribute("message", "メールアドレス、パスワードを入力してください");
+			return "login";
+		}
+
+		List<AccountInfo> accountListMail = accountInfoRepository.findByEmail(email);
+		List<AccountInfo> accountListPass = accountInfoRepository.findByPassword(password);
+		List<AccountInfo> accountListMailandPass = accountInfoRepository.findByEmailAndPassword(email, password);
+		if (accountListMailandPass == null || accountListMailandPass.size() == 0) {
+			model.addAttribute("message", "メールアドレス、パスワードが登録されていません");
+			return "login";
+		}
+
+		account.setName(accountListMail.get(0).getName());
 		return "redirect:/museums";
 	}
 	/*public String login(

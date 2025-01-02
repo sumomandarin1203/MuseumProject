@@ -6,12 +6,25 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
+	
 	<header th:replace="header"></header>
-	<hr>
+	<hr><!--
 	<nav>
 		<a href="/museums">全エリア</a>
-		<a href=""
-	</nav>
-
+		<a href=""></a>
+	</nav>-->
+	<h1>博物館一覧</h1>
+	<table border="1">
+		<tr>
+			<th>博物館名</th>
+			<!--<th>エリア</th>-->
+			<th>市町村名</th>
+		</tr>
+		<tr th:each="museum:${museums}">
+			<td th:text="${museum.museumName}"></td>
+			<!--<td th:text="${museum.areaId}"></td>-->
+			<td th:text="${museum.cityName}"></td>
+		</tr>
+	</table>
 </body>
 </html>
