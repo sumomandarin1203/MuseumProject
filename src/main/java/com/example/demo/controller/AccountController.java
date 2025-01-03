@@ -60,7 +60,7 @@ public class AccountController {
 		List<AccountInfo> accountListPass = accountInfoRepository.findByPassword(password);
 		List<AccountInfo> accountListMailandPass = accountInfoRepository.findByEmailAndPassword(email, password);
 		if (accountListMailandPass == null || accountListMailandPass.size() == 0) {
-			model.addAttribute("message", "メールアドレス、パスワードが登録されていません");
+			model.addAttribute("message", "メールアドレス、パスワードが異なるか登録されていません");
 			return "login";
 		}
 

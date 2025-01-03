@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+hr{
+	border-top: 2px solid rgb(64, 128, 128);
+}
+
+body{
+    background-image: url(../img/Factory2.jpg);
+	background-color: rgba(255, 255, 255, 0.8);
+	background-size: cover;
+	background-blend-mode:lighten;
+	text-align: center;
+	min-width: 900px;
+}
+
+table{
+	background-color: rgba(255, 255, 255, 0.6);
+    margin: 5px auto;
+    min-width: 500px;
+}
+
+header{
+    background-color: rgba(0, 128, 0,0.2);
+    color: #1f1f1f;
+}
+
+footer{
+    background-color: rgba(0, 128, 0,0.2);
+	}

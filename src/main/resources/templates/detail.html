@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>詳細</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<header th:replace="header"></header>
+	<hr>
+	<h1 th:text="${museum_detail.museumName}"></h1>
+	<table border="1">
+		<tr>
+			<th>エリア</th>
+			<td th:text="${museum_detail.areaId}"></td>
+		</tr>
+		<tr>
+			<th>市町村名</th>
+			<td th:text="${museum_detail.cityName}"></td>
+		</tr>
+		<tr th:each="c:${comment}">
+			<th>コメント</th>
+			<td th:text="${c.content}">	</td>
+		</tr>			
+										
+									
+	</table>
+	
+	<hr>
+	<footer th:replace="footer"></footer>
+</body>
+</html>

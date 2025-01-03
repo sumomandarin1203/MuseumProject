@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
 @Entity
 @Table(name = "museums")
@@ -21,6 +22,9 @@ public class Museum {
 	@Column(name = "city_name")
 	private String cityName; // 市町村名
 
+	@Transient
+	private String area_name;
+
 	public Integer getId() {
 		return id;
 	}
@@ -35,6 +39,10 @@ public class Museum {
 
 	public String getCityName() {
 		return cityName;
+	}
+
+	public void setArea_name(String area_name) {
+		this.area_name = area_name;
 	}
 
 }
