@@ -8,6 +8,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
 @Entity
 @Table(name = "comments")
@@ -25,6 +26,8 @@ public class Comment {
 	private Integer userId;
 	@Column(name = "lastupdate")
 	private Date lastupdate;
+	@Transient
+	private String userName;
 
 	public Integer getId() {
 		return id;
@@ -44,6 +47,14 @@ public class Comment {
 
 	public Date getLastupdate() {
 		return lastupdate;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 }

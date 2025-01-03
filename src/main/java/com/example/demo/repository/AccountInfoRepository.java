@@ -12,4 +12,5 @@ public interface AccountInfoRepository extends JpaRepository<AccountInfo, Intege
 	List<AccountInfo> findByPassword(String password);
 
 	List<AccountInfo> findByEmailAndPassword(String email, String password);
+
 }
