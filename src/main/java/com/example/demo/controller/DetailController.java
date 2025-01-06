@@ -30,8 +30,6 @@ public class DetailController {
 	AreaRepository areaRepository;
 	@Autowired
 	AccountInfoRepository accountInfoRepository;
-	/*@Autowired
-	HttpSession session;*/
 	@Autowired
 	Account account;
 

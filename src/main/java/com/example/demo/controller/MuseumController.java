@@ -27,19 +27,7 @@ public class MuseumController {
 	public String index(@RequestParam(value = "areaId", defaultValue = "") Integer areaId,
 			Model model) {
 		// museumsテーブルから全博物館の一覧を取得
-		//List<Museum> museumList = museumRepository.findAll();
-		// Thymleafにデータを渡す
-		//model.addAttribute("museums", museumList);
-
 		List<Area> areaList = areaRepository.findAll();
-
-		/*エリアIDとエリア名
-		 * for(museum:museumList) {
-			
-			museum.areaId
-		}*/
-
-		//areaList = areaRepository.findById(id);
 		model.addAttribute("areas", areaList);
 
 		List<Museum> museumList = null;

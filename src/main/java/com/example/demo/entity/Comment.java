@@ -54,32 +54,4 @@ public class Comment {
 		this.userName = userName;
 	}
 
-	/*public Integer getId() {
-		return id;
-	}
-	
-	public Integer getMuseumId() {
-		return museumId;
-	}
-	
-	public String getContent() {
-		return content;
-	}
-	
-	public Integer getUserId() {
-		return userId;
-	}
-	
-	public Date getLastupdate() {
-		return lastupdate;
-	}
-	
-	public String getUserName() {
-		return userName;
-	}
-	
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}*/
-
 }

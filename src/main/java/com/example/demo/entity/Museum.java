@@ -10,6 +10,7 @@ import jakarta.persistence.Transient;
 
 @Entity
 @Table(name = "museums")
+
 public class Museum {
 	@Id // 主キー
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

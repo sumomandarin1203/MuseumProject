@@ -33,7 +33,6 @@
 	<h2>コメントを追加する</h>
 	<form action="/detail" method="post">
 		<input type="hidden" name="id" th:value="${museum_detail.id}">
-<!--		<input type="hidden" name="userid" th:value="${@account.id}">-->
 		<input type="text" name="content" size="100">
 		<button>投稿する</button>
 	</form>

@@ -13,7 +13,6 @@ public class Area {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id; // エリアID
-
 	@Column(name = "area")
 	private String area; // エリア名
 

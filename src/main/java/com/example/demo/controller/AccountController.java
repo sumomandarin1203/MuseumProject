@@ -38,7 +38,6 @@ public class AccountController {
 			@RequestParam("email") String email,
 			@RequestParam("password") String password,
 			Model model) {
-
 		if (password == null || password.length() == 0
 				|| email == null || email.length() == 0) {
 			model.addAttribute("message", "メールアドレス、パスワードを入力してください");
