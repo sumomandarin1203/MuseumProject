@@ -2,8 +2,6 @@ package com.example.demo.controller;
 
 import java.util.List;
 
-import jakarta.servlet.http.HttpSession;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -32,13 +30,15 @@ public class DetailController {
 	AreaRepository areaRepository;
 	@Autowired
 	AccountInfoRepository accountInfoRepository;
-	@Autowired
-	HttpSession session;
+	/*@Autowired
+	HttpSession session;*/
 	@Autowired
 	Account account;
 
 	@GetMapping("/detail")
 	public String detail(@RequestParam("id") Integer id, Model model) {
+		int tempAccountId = account.getId();
+
 		Museum museum = museumRepository.findById(id).get();
 		List<Comment> commentList = null;
 		commentList = commentRepository.findByMuseumId(id);
@@ -64,7 +64,7 @@ public class DetailController {
 		Comment comment = new Comment(museumId, content, account.getId());
 		commentRepository.save(comment);
 
-		return "redirect:/detail";
+		return "redirect:/detail?id=" + museumId;
 	}
 
 }

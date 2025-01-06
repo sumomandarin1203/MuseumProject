@@ -54,6 +54,7 @@ public class AccountController {
 		}
 
 		account.setName(accountListMail.get(0).getName());
+		account.setId(accountListMail.get(0).getId());
 		return "redirect:/museums";
 	}
 
