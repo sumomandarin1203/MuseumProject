@@ -1,6 +1,6 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.3 Chrome/130.0.6723.137 Electron/33.2.1 Safari/537.36" version="26.0.3">
   <diagram name="ページ1" id="JEuP_TElPKzvXPxClPZB">
-    <mxGraphModel dx="794" dy="519" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1134" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -19,112 +19,118 @@
         <mxCell id="BTsu5N_og1_vkZN3vqRT-7" value="会員登録完了" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="548" y="100" width="120" height="60" as="geometry" />
         </mxCell>
-        <UserObject label="/./login,/logout" placeholders="1" name="Variable" id="BTsu5N_og1_vkZN3vqRT-8">
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
-            <mxGeometry x="40" y="80" width="80" height="20" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="BTsu5N_og1_vkZN3vqRT-9">
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
-            <mxGeometry x="200" y="80" width="80" height="20" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="/signup(POST)" placeholders="1" name="Variable" id="BTsu5N_og1_vkZN3vqRT-10">
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
-            <mxGeometry x="377" y="80" width="80" height="20" as="geometry" />
-          </mxCell>
-        </UserObject>
         <mxCell id="BTsu5N_og1_vkZN3vqRT-11" value="トップ画面&lt;div&gt;博物館一覧&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="28" y="202" width="120" height="60" as="geometry" />
+          <mxGeometry x="30" y="202" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="BTsu5N_og1_vkZN3vqRT-12" value="エリア別一覧" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="200" y="202" width="120" height="60" as="geometry" />
         </mxCell>
-        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="BTsu5N_og1_vkZN3vqRT-13">
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
-            <mxGeometry x="200" y="182" width="80" height="20" as="geometry" />
-          </mxCell>
-        </UserObject>
         <mxCell id="BTsu5N_og1_vkZN3vqRT-14" value="詳細" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="377" y="202" width="120" height="60" as="geometry" />
         </mxCell>
-        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="BTsu5N_og1_vkZN3vqRT-15">
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
-            <mxGeometry x="377" y="182" width="80" height="20" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="BTsu5N_og1_vkZN3vqRT-16" value="新規登録" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="200" y="320" width="120" height="60" as="geometry" />
-        </mxCell>
-        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="BTsu5N_og1_vkZN3vqRT-17">
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
-            <mxGeometry x="200" y="300" width="80" height="20" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="BTsu5N_og1_vkZN3vqRT-18" value="新規登録確認" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="377" y="320" width="120" height="60" as="geometry" />
-        </mxCell>
-        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="BTsu5N_og1_vkZN3vqRT-19">
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
-            <mxGeometry x="377" y="300" width="80" height="20" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="BTsu5N_og1_vkZN3vqRT-20" value="トップ画面&lt;div&gt;博物館一覧&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="548" y="320" width="120" height="60" as="geometry" />
-        </mxCell>
-        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="BTsu5N_og1_vkZN3vqRT-21">
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
-            <mxGeometry x="548" y="300" width="80" height="20" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="BTsu5N_og1_vkZN3vqRT-22" value="マイページ&lt;div&gt;登録済み博物館一覧&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="200" y="430" width="120" height="60" as="geometry" />
-        </mxCell>
-        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="BTsu5N_og1_vkZN3vqRT-23">
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
-            <mxGeometry x="200" y="410" width="80" height="20" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="BTsu5N_og1_vkZN3vqRT-24" value="編集" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="377" y="430" width="120" height="60" as="geometry" />
-        </mxCell>
-        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="BTsu5N_og1_vkZN3vqRT-25">
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
-            <mxGeometry x="377" y="410" width="80" height="20" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="BTsu5N_og1_vkZN3vqRT-26" value="編集確認" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="548" y="430" width="120" height="60" as="geometry" />
-        </mxCell>
-        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="BTsu5N_og1_vkZN3vqRT-27">
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
-            <mxGeometry x="548" y="410" width="80" height="20" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="BTsu5N_og1_vkZN3vqRT-28" value="マイページ&lt;div&gt;登録済み博物館一覧&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="548" y="525" width="120" height="60" as="geometry" />
-        </mxCell>
-        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="BTsu5N_og1_vkZN3vqRT-29">
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
-            <mxGeometry x="548" y="505" width="80" height="20" as="geometry" />
-          </mxCell>
-        </UserObject>
         <mxCell id="BTsu5N_og1_vkZN3vqRT-30" value="ログイン画面" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="707" y="100" width="120" height="60" as="geometry" />
         </mxCell>
-        <UserObject label="/./login,/logout" placeholders="1" name="Variable" id="BTsu5N_og1_vkZN3vqRT-31">
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
-            <mxGeometry x="717" y="80" width="80" height="20" as="geometry" />
+        <mxCell id="2E7bcyxnMBeXtwTE7le_-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BTsu5N_og1_vkZN3vqRT-3" target="BTsu5N_og1_vkZN3vqRT-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="300" as="sourcePoint" />
+            <mxPoint x="430" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2E7bcyxnMBeXtwTE7le_-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="BTsu5N_og1_vkZN3vqRT-4" target="BTsu5N_og1_vkZN3vqRT-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="300" as="sourcePoint" />
+            <mxPoint x="430" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2E7bcyxnMBeXtwTE7le_-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BTsu5N_og1_vkZN3vqRT-5" target="BTsu5N_og1_vkZN3vqRT-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="300" as="sourcePoint" />
+            <mxPoint x="430" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2E7bcyxnMBeXtwTE7le_-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="BTsu5N_og1_vkZN3vqRT-7" target="BTsu5N_og1_vkZN3vqRT-30" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="300" as="sourcePoint" />
+            <mxPoint x="430" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2E7bcyxnMBeXtwTE7le_-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BTsu5N_og1_vkZN3vqRT-11" target="BTsu5N_og1_vkZN3vqRT-12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="300" as="sourcePoint" />
+            <mxPoint x="430" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2E7bcyxnMBeXtwTE7le_-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BTsu5N_og1_vkZN3vqRT-12" target="BTsu5N_og1_vkZN3vqRT-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="300" as="sourcePoint" />
+            <mxPoint x="430" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2E7bcyxnMBeXtwTE7le_-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="BTsu5N_og1_vkZN3vqRT-3" target="BTsu5N_og1_vkZN3vqRT-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="300" as="sourcePoint" />
+            <mxPoint x="430" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2E7bcyxnMBeXtwTE7le_-14" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="BTsu5N_og1_vkZN3vqRT-14" target="BTsu5N_og1_vkZN3vqRT-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="548" y="280" as="sourcePoint" />
+            <mxPoint x="598" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="550" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2E7bcyxnMBeXtwTE7le_-15" value="コメント追加" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="520" y="262" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1HVX73ML39DZMNK2K3QS-1" value="マイページ&lt;div&gt;登録済み博物館一覧&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="1HVX73ML39DZMNK2K3QS-2">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" vertex="1" parent="1">
+            <mxGeometry x="200" y="410" width="80" height="20" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="BTsu5N_og1_vkZN3vqRT-32" value="削除確認画面" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="1HVX73ML39DZMNK2K3QS-3" value="編集" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="377" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="1HVX73ML39DZMNK2K3QS-4">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" vertex="1" parent="1">
+            <mxGeometry x="377" y="410" width="80" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="1HVX73ML39DZMNK2K3QS-5" value="編集確認" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="548" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="1HVX73ML39DZMNK2K3QS-6">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" vertex="1" parent="1">
+            <mxGeometry x="548" y="410" width="80" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="1HVX73ML39DZMNK2K3QS-7" value="マイページ&lt;div&gt;登録済み博物館一覧&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="548" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="1HVX73ML39DZMNK2K3QS-8">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" vertex="1" parent="1">
+            <mxGeometry x="548" y="505" width="80" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="1HVX73ML39DZMNK2K3QS-9" value="削除確認画面" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="377" y="525" width="120" height="60" as="geometry" />
         </mxCell>
-        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="BTsu5N_og1_vkZN3vqRT-33">
-          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
+        <UserObject label="/signup(GET)" placeholders="1" name="Variable" id="1HVX73ML39DZMNK2K3QS-10">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" vertex="1" parent="1">
             <mxGeometry x="377" y="505" width="80" height="20" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="1HVX73ML39DZMNK2K3QS-11" value="" style="rounded=0;whiteSpace=wrap;html=1;opacity=80;" vertex="1" parent="1">
+          <mxGeometry x="150" y="390" width="580" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="1HVX73ML39DZMNK2K3QS-13" value="機能追加" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="110" y="350" width="110" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
