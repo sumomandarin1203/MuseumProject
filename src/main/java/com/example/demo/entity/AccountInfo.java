@@ -39,4 +39,15 @@ public class AccountInfo {
 		return role;
 	}
 
+	public AccountInfo() {
+		super();
+	}
+
+	public AccountInfo(String name, String email, String password, Integer role) {
+		this.name = name;
+		this.password = password;
+		this.email = email;
+		this.role = role;
+	}
+
 }

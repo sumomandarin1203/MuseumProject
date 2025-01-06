@@ -9,5 +9,4 @@ import com.example.demo.entity.Comment;
 public interface CommentRepository extends JpaRepository<Comment, Integer> {
 	// select * from comments where museum_id = ?
 	List<Comment> findByMuseumId(Integer museumId);
-
 }

@@ -57,4 +57,31 @@ public class AccountController {
 		return "redirect:/museums";
 	}
 
+	// 新規会員登録画面表示
+	@GetMapping("/signup")
+	public String showsign() {
+		return "signup";
+	}
+
+	// 新規会員登録処理
+	@PostMapping("/signup")
+	public String signup(
+			@RequestParam(value = "userName", defaultValue = "") String userName,
+			@RequestParam(value = "email", defaultValue = "") String email,
+			@RequestParam(value = "password", defaultValue = "") String password,
+			@RequestParam(value = "role", defaultValue = "") Integer role,
+			Model model) {
+		AccountInfo accountInfo = new AccountInfo(userName, email, password, role);
+		List<AccountInfo> accountList = accountInfoRepository.findAll();
+		for (AccountInfo ac : accountList) {
+			if (accountInfo.getEmail().equals(ac.getEmail())) {
+				model.addAttribute("message", "すでに登録されているメールアドレスです");
+				return "signup";
+			}
+		}
+		accountInfoRepository.save(accountInfo);
+		return "redirect:/";
+
+	}
+
 }
