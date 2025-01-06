@@ -25,9 +25,10 @@
 		</tr>
 		<tr th:each="museum:${museums}">
 			<td> 
-					<a th:href="@{/detail(id=${museum.id})}">
-						<span th:text="${museum.museumName}"></span></a>
-					</td>
+				<a th:href="@{/detail(id=${museum.id})}">
+					<span th:text="${museum.museumName}"></span>
+				</a>
+			</td>
 			<!--<td th:text="${museum.areaId}"></td>-->
 			<td th:text="${museum.cityName}"></td>
 		</tr>
