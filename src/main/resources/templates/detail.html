@@ -30,12 +30,14 @@
 		</tr>		
 	</table>
 	
-	<h2>コメントを追加する</h>
+	<h2>コメントを追加する</h2>
 	<form action="/detail" method="post">
 		<input type="hidden" name="id" th:value="${museum_detail.id}">
-		<input type="text" name="content" size="100">
+		<textarea name="content" rows="5" cols="100"></textarea>
+		<!--<input type="text" name="content" size="100">-->
 		<button>投稿する</button>
 	</form>
+	<p><a href="/museums">トップページへ</a></p>
 	<hr>
 	<footer th:replace="footer"></footer>
 </body>
