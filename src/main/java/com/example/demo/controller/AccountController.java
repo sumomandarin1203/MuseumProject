@@ -26,9 +26,13 @@ public class AccountController {
 
 	// ログイン画面を表示
 	@GetMapping({ "/", "login", "logout" })
-	public String index() {
+	public String index(@RequestParam(name = "error", defaultValue = "") String error,
+			Model model) {
 		// セッション情報をクリア
 		session.invalidate();
+		if (error.equals("notLoggedIn")) {
+			model.addAttribute("message", "ログインしてください");
+		}
 		return "login";
 	}
 
