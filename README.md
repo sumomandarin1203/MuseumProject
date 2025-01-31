@@ -18,4 +18,4 @@
 - フレームワーク：Spring Boot（Version:3.4.1）<br>
 - SQL：MySQL(Version:8.0.40)<br>
 - 参考資料：<br>
-新明解Java入門、SQLゼロからはじめるデータベース操作、Spring Framework超入門やさしくわかるWebアプリ開発、プロになるためのSpring入門、１冊ですべて身につくHTML＆CSSとWebデザイン入門講座
+新明解Java入門、SQLゼロからはじめるデータベース操作、Spring Framework超入門やさしくわかるWebアプリ開発、プロになるためのSpring入門、１冊ですべて身につくHTML＆CSSとWebデザイン入門講座、これからのJavaScriptの教科書
