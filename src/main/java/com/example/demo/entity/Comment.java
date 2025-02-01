@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -27,9 +27,11 @@ public class Comment {
 	@Column(name = "user_id")
 	private Integer userId;
 	@Column(name = "lastupdate")
-	private Date lastupdate;
+	private LocalDate lastupdate;
 	@Transient
 	private String userName;
+	@Transient
+	private String museumName;
 
 	public Comment() {
 	}
@@ -40,11 +42,12 @@ public class Comment {
 		this.content = content;
 	}
 
-	public Comment(Integer museumId, String content, Integer userId) {
+	public Comment(Integer museumId, String content, Integer userId, LocalDate lastUpDate) {
 		super();
 		this.museumId = museumId;
 		this.content = content;
 		this.userId = userId;
+		this.lastupdate = lastUpDate;
 	}
 
 	public Comment(Integer museumId, String content, String userName) {

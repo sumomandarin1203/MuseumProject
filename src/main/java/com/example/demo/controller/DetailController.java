@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,7 +60,7 @@ public class DetailController {
 			//@RequestParam(name = "userid") Integer userId,
 			Model model) {
 		//AccountInfo accountInfo = accountInfoRepository.findById(userId).get();
-		Comment comment = new Comment(museumId, content, account.getId());
+		Comment comment = new Comment(museumId, content, account.getId(), LocalDate.now());
 		commentRepository.save(comment);
 
 		return "redirect:/detail?id=" + museumId;

@@ -1,10 +1,22 @@
 <header>
 	<h1>北海道の博物館・郷土資料館を知ろう</h1>
-	<!-- 一覧に飛べるようにするかどうか検討 -->
-	<span th:text="${@account.name}+'さんがログイン中'"></span>
-	
-	<!--<a href="/museums">トップページへ</a>-->
-	<a href="/logout">ログアウト</a>
-	
-
+	<nav>
+		<ul class="main-nav">
+			<li><span th:text="${@account.name}+'さんがログイン中'"></span></li>
+			<li><a th:href="@{/mypage(id=${@account.id})}">マイページ</a></li>
+			<li><a href="/logout">ログアウト</a></li>
+		</ul>
+	</nav>
 </header>
+
+
+
+
+
+
+<!--<header>-->
+<!--	<h1>北海道の博物館・郷土資料館を知ろう</h1>-->
+<!--	<span th:text="${@account.name}+'さんがログイン中'"></span>-->
+<!--	<a th:href="@{/mypage(id=${@account.id})}">マイページ</a>-->
+<!--	<a href="/logout">ログアウト</a>-->
+<!--</header>-->

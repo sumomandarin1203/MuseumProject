@@ -12,9 +12,9 @@
 	<h1 th:text="${museum_detail.museumName}"></h1>
 	
 	
-	<table border="1">
+	<table border="1" style="width:100%">
 		<tr>
-			<th>エリア</th>
+			<th style="width:20%">エリア</th>
 			<td th:text="${area.area}"></td>
 		</tr>
 		<tr>
@@ -27,7 +27,7 @@
 		</tr>-->
 		<tr th:each="c:${comment}">             
 			<th>コメント</th>
-			<td th:utext="${c.content} + '<br>'+'登録者 : '+ ${c.userName}"></td>				
+			<td th:utext="${c.content} + '<br>'+'登録者 : '+ ${c.userName}" align="left"></td>				
 		</tr>		
 	</table>
 	
@@ -39,8 +39,6 @@
 		<button>投稿する</button>
 	</form>
 	<p><a href="/museums">トップページへ</a></p>
-	
-	
 	<hr>
 	<footer th:replace="footer"></footer>
 </body>

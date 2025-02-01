@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>マイページ</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<header th:replace="header"></header>
+	<hr>
+	<p><a href="/museums">トップページへ</a></p>
+	<h1>マイページ</h1>
+	<h2 th:text="${@account.name}+'さんが投稿したコメント一覧'"></h2>
+	<table border="1" style="width:100%">
+		<tr>
+			<th style="width:25%">博物館名</th>
+			<th style="width:50%">コメント</th>
+			<th style="width:15%">投稿日</th>
+			<th style="width:10%">削除</th>
+		</tr>
+		<tr th:each="c:${comment}">
+			<td th:text="${c.museumName}"></td>
+			<td th:text="${c.content}" align="left"></td>
+			<td th:text="${c.lastupdate}"></td>
+			<td>
+				<form th:action="@{/mypage}" method="post" onsubmit="return check()">
+					<input type="hidden" name="id" th:value="${c.id}">
+					<input type="submit" value="削除"></input>
+				</form>
+			</td>
+		</tr>
+		
+		</table>
+		<script type="text/javascript">
+			function check(){
+				if(window.confirm('1件のコメントを削除しますか？')){
+					return true;
+				}else{
+					window.alert('コメント削除をキャンセルしました');
+					return false;
+				}
+			}
+		</script>
+	<p><a href="/museums">トップページへ</a></p>
+	<hr>
+	<footer th:replace="footer"></footer>
+</body>
+</html>

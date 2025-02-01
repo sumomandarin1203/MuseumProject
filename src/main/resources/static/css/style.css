@@ -1,8 +1,32 @@
 @charset "UTF-8";
 
 
+.main-nav{
+	display: flex;
+	list-style: none;
+	gap: 2.5rem;
+	justify-content: center;
+	font-size: 1.1rem;
+	padding-bottom: 5px;
+}
+
+h1{
+	padding-top: 20px;
+}
+
 hr{
 	border-top: 2px solid rgb(64, 128, 128);
+}
+
+.about{
+	max-width: 736px;
+	padding: 0 1.5rem;
+	margin: 3rem auto 4rem;
+}
+
+.about p{
+	margin-bottom: 3rem;
+	font-weight: normal;
 }
 
 body{
@@ -16,16 +40,18 @@ body{
 
 table{
 	background-color: rgba(255, 255, 255, 0.6);
-    margin: 10px auto;
-    min-width: 500px;
+    margin: 25px auto;
+    min-width: 550px;
 	max-width: 800px;
 }
 
 header{
     background-color: rgba(0, 128, 0,0.2);
     color: #1f1f1f;
+
 }
 
 footer{
     background-color: rgba(0, 128, 0,0.2);
-	}
+	padding: 10px 0 10px 0;
+}
