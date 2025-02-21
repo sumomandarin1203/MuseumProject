@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<meta charset="UTF-8">
-<title>詳細</title>
-<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<meta charset="UTF-8">
+	<title>詳細</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
+
 <body>
 	<header th:replace="header"></header>
 	<hr>
 	<p><a href="/museums">トップページへ</a></p>
 	<h1 th:text="${museum_detail.museumName}"></h1>
-	
-	
+
+	<p id="currentWeather"></p>
+<!--	<div id="icon"><img id="wicon" src="" alt="Weather icon"></div>-->
+
+
 	<table border="1" style="width:100%">
 		<tr>
 			<th style="width:20%">エリア</th>
@@ -25,12 +30,12 @@
 			<th>博物館登録者</th>
 			<td th:text="${name.name}"></td>
 		</tr>-->
-		<tr th:each="c:${comment}">             
+		<tr th:each="c:${comment}">
 			<th>コメント</th>
-			<td th:utext="${c.content} + '<br>'+'登録者 : '+ ${c.userName}" align="left"></td>				
-		</tr>		
+			<td th:utext="${c.content} + '<br>'+'登録者 : '+ ${c.userName}" align="left"></td>
+		</tr>
 	</table>
-	
+
 	<h2>コメントを追加する</h2>
 	<form action="/detail" method="post">
 		<input type="hidden" name="id" th:value="${museum_detail.id}">
@@ -38,8 +43,59 @@
 		<!--<input type="text" name="content" size="100">-->
 		<button>投稿する</button>
 	</form>
+
+	<div id="data-container" th:data-value="${museum_detail.cityName}"></div>
+
+	<script>
+		var request = new XMLHttpRequest();
+		const city = document.getElementById('data-container').getAttribute('data-value');
+		const apiKey = "e284d5ad43f4f47c2ffc1455f4db02a3";
+		const endpoint = "http://api.openweathermap.org/data/2.5/weather";
+		// new apiKey = "a1ac2e08012248a8a6434528250302";
+		fetch(`${endpoint}?q=${city}&appid=${apiKey}&lang=ja&units=metric`)
+			.then(response => response.json())
+			.then(data => {
+				const weather = data.weather[0].description;
+				const temperature = data.main.temp;
+				const humidity = data.main.humidity;
+
+				const weatherIcon = data.weather[0].icon;
+
+				console.log(`天気：${weather}`);
+				console.log(`温度：${temperature}℃`);
+				console.log(`湿度：${humidity}％`);
+				console.log(`アイコン：${weatherIcon}`);
+
+				document.getElementById("currentWeather").innerHTML
+					= "現在の" + city + "の天気<br>" + weather + "<br>" + "気温：" + temperature.toFixed(1) + "℃:<br>" + "湿度：" + humidity + "%";
+
+
+
+				var iconcode = data.weather[0].icon;
+				var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+				//document.getElementById("image").innerHTML=iconurl;
+				//				$('#wicon').attr('src', iconurl);
+				let img = document.createElement("image_place");
+				img.src = iconurl;
+
+				//console.log(`https://openweathermap.org/img/wn/${weatherIcon}@2x.png`);
+				//var url = document.createElement('script');
+				//script.src='https://openweathermap.org/img/wn/{weatherIcon}@2x.png';
+
+
+				//				document.getElementById("image").innerHTML
+				//				= ('<img src=" ' + url + ' " alt="' +  + ' ">');
+
+
+			});
+	</script>
+
+	<!-- http://api.openweathermap.org/data/2.5/weather?q=札幌市&appid=e284d5ad43f4f47c2ffc1455f4db02a3 -->
+
+
 	<p><a href="/museums">トップページへ</a></p>
 	<hr>
 	<footer th:replace="footer"></footer>
 </body>
+
 </html>

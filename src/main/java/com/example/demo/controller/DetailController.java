@@ -36,11 +36,10 @@ public class DetailController {
 
 	@GetMapping("/detail")
 	public String detail(@RequestParam("id") Integer id, Model model) {
-		int tempAccountId = account.getId();
+		// int tempAccountId = account.getId();
 
 		Museum museum = museumRepository.findById(id).get();
-		List<Comment> commentList = null;
-		commentList = commentRepository.findByMuseumId(id);
+		List<Comment> commentList = commentRepository.findByMuseumId(id);
 		Area area = areaRepository.findById(museum.getAreaId()).get();
 		// userIdからuserNameをセットする
 		for (Comment c : commentList) {
